@@ -80,7 +80,7 @@
   "readme": "ERROR: No README data found!",
   "scripts": {
     "prepublish": "tsc",
-    "postinstall": "tsc"
+    "postinstall": "../.bin/tsc"
   },
   "typings": "dist/tag-input.component.d.ts",
   "version": "0.1.5"
