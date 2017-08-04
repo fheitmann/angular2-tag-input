@@ -79,7 +79,8 @@
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "scripts": {
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "postinstall": "tsc"
   },
   "typings": "dist/tag-input.component.d.ts",
   "version": "0.1.5"
