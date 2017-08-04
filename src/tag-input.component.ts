@@ -115,6 +115,8 @@ export class TagInputComponent {
   }
 
   private _isTagValid(tagString: string) {
+    if(!typeof this.allowedTagsPattern === "string") this.allowedTagsPattern = /.+/;
+    this.allowedTagsPattern = new RegExp(this.allowedTagsPattern, "i");
     return this.allowedTagsPattern.test(tagString);
   }
 
